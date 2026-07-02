@@ -24,7 +24,7 @@ METHOD OVERLOADING
 - The parameter list can differ by:
     1. Number of parameters
     2. Type of parameters
-    3. Order of parameter types
+    3. Order of parameter types.
 
 Examples:
     add(int a, int b)
