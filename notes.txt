@@ -1,0 +1,69 @@
+
+basic syntax :
+
+public class Main {
+  public static void main(String[] args) {
+    System.out.println("Hello World");
+  }
+}
+
+static : to access the particular function you don't need any objects.
+public : keyword defines the accessibilty of the function for jvm.
+void : indicated that no output is returned by the main function and jvm doesn't expect a return value.
+String[] args :  this is a string array that is passed to the main function. passed while running the code and compilation.
+
+
+System.out.println(arr[1]);
+
+System is class
+out is object 
+println is a method/function
+
+Identifiers : the names given to define the variables, functions, classes, enum, anything.
+
+The general rules for naming variables are :
+    Names can contain letters, digits, underscores, and dollar signs
+    Names must begin with a letter
+    Names should start with a lowercase letter, and cannot contain whitespace
+    Names can also begin with $ and _
+    Names are case-sensitive ("myVar" and "myvar" are different variables)
+    Reserved words (like Java keywords, such as int or boolean) cannot be used as names
+
+java devs use camelcase convention for identifiers. (eg : camelCase, firstNum, thisIsNewIdentifier)
+All constants identifiers are writen in caps. 
+
+VARIABLES :
+
+    Variables are containers for storing data values.
+
+    In Java, there are different types of variables, for example:
+
+    String - stores text, such as "Hello". String values are surrounded by double quotes
+    int - stores integers (whole numbers), without decimals, such as 123 or -123
+    float - stores floating point numbers, with decimals, such as 19.99 or -19.99
+    char - stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes
+    boolean - stores values with two states: true or false
+
+there are two types of variables : primitive and non primitive:
+primitive are base and predefined default data types by the language/ smallest unit of storage.(eg : int, boolean, double)
+non-primitive are the derived datatypes. ( eg classes, arrays)
+
+Float Data types:
+
+1) float
+2) Double
+
+BOOLEAN : 
+
+Implicit Typecasting : 
+
+byte -> short -> int -> long -> float -> double
+
+OPERATORS : 
+
+Arithmetic operators : + - * / %
+logical operators : && || !
+&& and || are binary operands while ! is a unary operand as it only needs one operand.
+conditional operators : < > = >= <= == !=
+
+assignment operands = LHS value is stored in the RHS identifier.
