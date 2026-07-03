@@ -67,3 +67,8 @@ logical operators : && || !
 conditional operators : < > = >= <= == !=
 
 assignment operands = LHS value is stored in the RHS identifier.
+
+NOTE : primitive data types start with lowercase letter while non primitive/derived data types start with an Uppercase letter.
+
+method area contains code. stack heap.
+when new objects are created they return their starting addresses.
