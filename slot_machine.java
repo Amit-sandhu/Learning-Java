@@ -27,7 +27,9 @@ public class slot_machine {
                 balance -= bet_amount;
                 System.out.println("you lost !");
             }
-            System.out.printf("%s | %s | %s\n", emojies[a], emojies[b], emojies[c]);
+            System.out.println("________________\n");
+            System.out.printf("| %s | %s | %s |\n", emojies[a], emojies[b], emojies[c]);
+            System.out.println("________________\n");
             System.out.println("Remaining balance : " + balance);
             System.out.print("Do you want to play again? y/n : ");
             char playagain = sc.next().charAt(0);
