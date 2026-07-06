@@ -72,3 +72,109 @@ NOTE : primitive data types start with lowercase letter while non primitive/deri
 
 method area contains code. stack heap.
 when new objects are created they return their starting addresses.
+
+
+==============================
+JAVA MEMORY (Easy Explanation)
+==============================
+
+There are 3 main memory areas in Java:
+
+1. STACK
+- Stores method calls.
+- Stores local variables.
+- Stores references (addresses) to objects.
+- Fast memory.
+- Memory is automatically removed when a method finishes.
+
+Example:
+Student s = new Student();
+
+Here, 's' is stored in the Stack.
+
+--------------------------------------
+
+2. HEAP
+- Stores all objects created using 'new'.
+- Stores instance (non-static) variables.
+- Objects remain here until no references point to them.
+- Garbage Collector removes unused objects.
+
+Example:
+Student s = new Student();
+
+The actual Student object is stored in the Heap.
+
+--------------------------------------
+
+3. METHOD AREA (METASPACE)
+- Stores class information.
+- Stores method definitions.
+- Stores constructor information.
+- Stores static variables.
+
+Example:
+static String company = "Google";
+
+'company' is stored once in the Method Area and shared by all objects.
+
+--------------------------------------
+
+Example:
+
+class Student{
+    static String company = "Google";
+    String name;
+    int age;
+}
+
+Student s = new Student();
+
+Method Area:
+- Student class
+- company
+
+Stack:
+- reference variable 's'
+
+Heap:
+- Student object
+- name
+- age
+
+--------------------------------------
+
+Easy Analogy:
+
+Method Area = University rulebook
+(Defines what a Student is and stores shared static data.)
+
+Heap = Hostel
+(The actual students/objects live here.)
+
+Stack = Reception Desk
+(Keeps a list of room numbers (references) and temporary work.)
+
+When you write:
+Student s = new Student();
+
+1. JVM reads the Student blueprint from the Method Area.
+2. Creates a Student object in the Heap.
+3. Stores the reference to that object in variable 's' on the Stack.
+
+Remember:
+
+Objects live in the HEAP.
+References live in the STACK.
+Static variables live in the METHOD AREA.
+
+Think of a university.
+
+Heap is like the hostel. Every student (object) actually lives there. 
+When you write new Student(), you're building a new hostel room and putting a student in it.
+
+Stack is like the reception desk. It doesn't contain the students—it only contains a 
+list of room numbers (references) and temporary information needed while work is being done.
+
+Method Area (Metaspace) is like the university rulebook. It contains the blueprint of what 
+a Student is (its fields, methods, constructors) and shared information like static variables.
