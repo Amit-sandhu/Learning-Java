@@ -178,3 +178,13 @@ list of room numbers (references) and temporary information needed while work is
 
 Method Area (Metaspace) is like the university rulebook. It contains the blueprint of what 
 a Student is (its fields, methods, constructors) and shared information like static variables.
+.
+
+
+types of variables : 
+
+LOCAL
+GLOBAL
+INSTANCE 
+REFRENCE 
+STATIC 

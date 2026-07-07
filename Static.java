@@ -1,8 +1,10 @@
 class Employee {
-
+    
     String name;
     String eid;
     double salary;
+    
+    // static variables are defined for a class for all objects collectively rather than for each object indvidually 
 
     static int numOfEmployees = 0;
     static String company = "Google";
@@ -15,9 +17,7 @@ class Employee {
     }
 
     void display() {
-        System.out.println(name + " works in " + company +
-                " has employee id: " + eid +
-                ", earns $" + salary);
+        System.out.println(name + " works in " + company + " has employee id: " + eid + ", earns $" + salary);
     }
 }
 
@@ -27,7 +27,7 @@ public class Static {
 
         System.out.println(Employee.numOfEmployees +" employees work in " + Employee.company);
 
-        Employee e1 = new Employee("Ryan", "1245E", 150000);
+        Employee e1 = new Employee("Ryan", "1245E", 150000);        //In Java, an object is also called an instance
         e1.display();
         System.out.println(Employee.numOfEmployees +" employees work in " + Employee.company);
 
