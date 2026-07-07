@@ -188,3 +188,15 @@ GLOBAL
 INSTANCE 
 REFRENCE 
 STATIC 
+
+
+static and non static variables and functions and their accessibilty between each other :
+
+static variables are created at the time class is created and remains in memeory area and can be accessed
+by both static and non static functions
+
+non-static variables are only created after object creation and can only be accessed by non-static function
+directly and in static functions only after object creation.
+
+this keyword : is a special reference variable by java that store the current the address of the object
+or instance that calls the object variable while executing the code. 

@@ -12,7 +12,7 @@ public class test {
         System.out.println(test.college);
         test s1 = new test();
         s1.name = "bob";
-        System.out.println(s1.college);
+        // System.out.println(s1.college);
         // System.out.println(test.name);
         System.out.println(test.college);
     }
