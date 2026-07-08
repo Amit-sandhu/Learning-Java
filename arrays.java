@@ -5,9 +5,9 @@ public class arrays {
     public static void main(String[] args){
 
 
-        String[] fruits = {"banana","apple","pineapple","orange"};
+        // String[] fruits = {"banana","apple","pineapple","orange"};
 
-        System.out.println(fruits);                                                 // return default string representation of the array object
+        // System.out.println(fruits);                                                 // return default string representation of the array object
         // System.out.println(Arrays.toString(fruits));                                // to print an array
 
         // System.out.println(fruits.length);
@@ -17,14 +17,15 @@ public class arrays {
         // System.out.println(Arrays.toString(fruits));
         
         
-        // student();
+        // System.out.println(fruits.getClass().getName() + "@" + fruits.hashCode());
+        student();
         // char_array();
         // bool_array();
         
         
     }
     
-    void student(){
+    static void student(){
         int[] students;           //null
         students = new int[5];
         
@@ -33,9 +34,8 @@ public class arrays {
         System.out.println(students);
         System.out.println(Arrays.toString(students));
         
-        System.out.println(students.getClass().getName());
-        System.out.println(students.hashCode());
-        System.out.println(students.getClass().getName() + "@" + Integer.toHexString(hashCode()));
+        // System.out.println(students.getClass().getName());
+        // System.out.println(students.hashCode());
         
     }
     
@@ -49,5 +49,5 @@ public class arrays {
         boolean[] bool = new boolean[4];
         System.out.println(bool);
         // System.out.println(Arrays.toString(bool));
-    }
+    }   
 }
