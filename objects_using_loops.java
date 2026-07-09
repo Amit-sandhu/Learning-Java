@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class objects_using_loops {
     public static void main(String[] args) {
-        
+
         Scanner sc = new Scanner(System.in);
         Student[] students = new Student[5];
         for (int i = 0; i < 5; i++) {
@@ -18,7 +18,7 @@ public class objects_using_loops {
 
             sc.nextLine();
 
-            Student s = new Student(a, b, c);
+            // Student s = new Student(a, b, c);
             students[i] = new Student(a, b, c);
 
         }
