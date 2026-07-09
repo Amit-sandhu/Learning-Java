@@ -2,9 +2,10 @@ import java.util.Scanner;
 
 public class objects_using_loops {
     public static void main(String[] args) {
+        
         Scanner sc = new Scanner(System.in);
         Student[] students = new Student[5];
-        for (int i = 0; i <= 1; i++) {
+        for (int i = 0; i < 5; i++) {
 
             System.out.print("Enter name of new student: ");
             String a = sc.nextLine();
@@ -20,23 +21,20 @@ public class objects_using_loops {
             Student s = new Student(a, b, c);
             students[i] = new Student(a, b, c);
 
-            s.print_name_age();
-            System.out.println();
-
-            s.print_gpa();
-            System.out.println("\n");
         }
         sc.close();
 
         // to access the created objects through the students array of objects
 
-        System.out.println(students[1].name);
-        System.out.println(students[1].age);
-        System.out.println(students[1].gpa + "\n");
+        int totalMarks =  0;
+        for(int i = 0;i<5;i++){
 
-        System.out.println(students[0].name);
-        System.out.println(students[0].age);
-        System.out.println(students[0].gpa);
+            if(students[i].age < 20){
+                totalMarks+=students[i].gpa;
+            }
+
+        }
+        System.out.println("Total marks of students with age < 20 : "+totalMarks);
     }
 }
 
