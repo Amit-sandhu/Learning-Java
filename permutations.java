@@ -1,6 +1,5 @@
-package dsa;
 
-public class AllPairs {
+public class permutations {
     public static void main(String[] args){
         int[] x = {2,8,1,3};
         permutations(x);
