@@ -203,3 +203,23 @@ or instance that calls the object variable while executing the code.
 
 Memory segmentation in JVM****************
 Non-Primitive are only refrence type variables.
+
+Arrays Random Access :
+
+arrays have contiguous memory allocation.
+
+Address of any index = Base Address + (size of datatype * index)
+
+takes constant time to access any random index / element in an array as it finds the address of the particular
+index and goes to that index in a constant time O(1).
+
+int [][] arr = new int[3][];
+
+above syntax doesn't give any errors even tho the 2nd size in 2d array is not desined. here the arr
+is the refrence variable that is pointing to the arr[3] which is itself a simple array of references and 
+the references are pointing to the 1d arrays of "yet not defined" arrays.
+
+the 1d arrays can be intitalized using :
+arr[0] = new int[5];
+now arr[0] is a reference in the heap array (as array itself is stored in the heap and arr reference
+variable is the only one stored in the stack) that is pointing to an int array of size 5 again in the heap mem.
