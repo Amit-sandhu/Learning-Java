@@ -234,3 +234,5 @@ person -> employee_____ clerk
 .        |______BA     |______AI
 
 is a relationship : here we can say that clerk is an employee ans employee is a person.
+
+the constructor for the base class is called first then the one for the parent class
