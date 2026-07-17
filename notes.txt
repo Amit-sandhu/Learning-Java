@@ -223,3 +223,14 @@ the 1d arrays can be intitalized using :
 arr[0] = new int[5];
 now arr[0] is a reference in the heap array (as array itself is stored in the heap and arr reference
 variable is the only one stored in the stack) that is pointing to an int array of size 5 again in the heap mem.
+
+
+INHERITANCE :
+
+.                 |~~~~ SD
+person -> employee_____ clerk 
+|                  
+|____student______btech___CSE
+.        |______BA     |______AI
+
+is a relationship : here we can say that clerk is an employee ans employee is a person.
