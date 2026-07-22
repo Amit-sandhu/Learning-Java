@@ -1,4 +1,6 @@
-public class bitwise {
+package bitwise;
+
+public class Bitwise {
     public static void main(String[] args){
 
         System.out.println(Integer.toBinaryString(8|12));       // or operator
@@ -18,6 +20,6 @@ public class bitwise {
         // syntax (x>>y)
         // x is the integer number we want to use the opearator on and y is the number of times
         // we want to shift the number
-        
+
     }
 }
