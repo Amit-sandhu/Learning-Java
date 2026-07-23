@@ -227,7 +227,7 @@ variable is the only one stored in the stack) that is pointing to an int array o
 
 INHERITANCE :
 
-.                 |~~~~ SD
+.                 |~~~~ SDE
 person -> employee_____ clerk 
 |                  
 |____student______btech___CSE

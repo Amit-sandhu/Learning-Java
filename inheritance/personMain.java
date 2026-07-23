@@ -1,6 +1,6 @@
 package inheritance;
 
-class person{
+abstract class person{
     
     String name;
     boolean isAlive = true;
