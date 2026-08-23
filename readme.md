@@ -1,4 +1,4 @@
-# Java Learning Notes
+# Java Learning
 
 A complete, ordered guide to every concept in this repository. Each section explains the idea in plain terms and links to the actual code so you can read the explanation, then immediately see it working.
 
